@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+}
+.first{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.first iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 15;
+}
+.firstbody{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.556);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.firstbody .title{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.firstbody .subtitle{
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(205, 203, 203);
+}
